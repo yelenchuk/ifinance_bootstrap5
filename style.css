@@ -6,8 +6,8 @@ body {
 }
 
 .header_logo {
-    font-size: 24px;
-    line-height: 32px;
+    font-size: 1.5rem;
+    line-height: 2rem;
     color: white;
 }
 
@@ -88,3 +88,18 @@ body {
     box-sizing: border-box;
 }
 
+.main_decr {
+    font-weight: 500;
+    font-size: 0.875rem;
+    line-height: 1.25rem;
+}
+
+.features__card--title {
+    font-weight: bold;
+    font-size: 1rem;
+    line-height: 1.5rem;
+}
+
+.features__card--desc {
+
+}
