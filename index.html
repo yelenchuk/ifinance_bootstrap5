@@ -20,7 +20,7 @@
             <div class="d-block d-sm-none">
                 <img src="img/card.svg">
             </div>
-            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarContent"
+            <button type="submit" class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarContent"
                     aria-controls="navbarContent" aria-expanded="false" aria-label="Toggle navigation" >
                 <span class="navbar-toggler-icon"> </span>
             </button>
@@ -386,15 +386,15 @@
                 </div>
             </div>
             <div class="col-10 offset-1 col-md-3 my-2">
-                <div class="app-button bg-light d-flex align-items-center">
+                <div type="submit" class="app-button bg-light d-flex align-items-center">
                     <div class="px-4">
                         <svg width="29" height="27" viewBox="0 0 29 27" fill="none" xmlns="http://www.w3.org/2000/svg">
                             <path d="M11.2459 15.0438C11.2459 14.5725 10.9386 14.2583 10.4775 14.2583H1.25669C0.795643 14.2583 0.488281 14.5725 0.488281 15.0438V22.8993C0.488281 23.3706 0.795643 23.6848 1.25669 23.842L10.4775 24.9417C10.9386 24.9417 11.2459 24.6275 11.2459 24.3133V15.0438ZM13.5512 14.2583C13.0901 14.2583 12.7828 14.5725 12.7828 15.0438V24.3133C12.7828 24.7846 13.0901 25.0988 13.5512 25.2559L27.3824 26.827C27.8435 26.827 28.1508 26.5128 28.1508 26.1986V15.2009C28.1508 14.7296 27.8435 14.4154 27.3824 14.4154L13.5512 14.2583ZM11.2459 2.78924C11.2459 2.31791 10.9386 2.00369 10.4775 2.1608L1.25669 3.26057C0.795643 3.26057 0.488281 3.57479 0.488281 4.04612V11.9016C0.488281 12.3729 0.795643 12.6872 1.25669 12.6872H10.4775C10.9386 12.6872 11.2459 12.3729 11.2459 11.9016V2.78924ZM13.5512 1.84658C13.0901 1.84658 12.7828 2.31791 12.7828 2.78924V12.0587C12.7828 12.5301 13.0901 12.8443 13.5512 12.8443H27.3824C27.8435 12.8443 28.1508 12.5301 28.1508 12.0587V1.06103C28.1508 0.589702 27.8435 0.275483 27.3824 0.432593L13.5512 1.84658Z" fill="#252B42"/>
                         </svg>
                     </div>
                     <div>
-                        <div class="text_button">Download on the</div>
-                        <div class="text_button_other">Windows Store</div>
+                        <div type="submit" class="text_button">Download on the</div>
+                        <div type="submit" class="text_button_other">Windows Store</div>
                     </div>
                 </div>
             </div>
@@ -426,7 +426,7 @@
                             </div>
                         </div>
                         <div>
-                            <button class="btn pricing__button">
+                            <button type="submit" class="btn pricing__button">
                                 <div class="pricing__button--text">Try for free</div>
                             </button>
                         </div>
@@ -449,11 +449,10 @@
                             </div>
                         </div>
                         <div>
-                            <button class="btn pricing__button">
+                            <button type="submit" class="btn pricing__button">
                                 <div class="pricing__button--text">Try for free</div>
                             </button>
                         </div>
-
                     </div>
                 </div>
             </div>
@@ -478,12 +477,40 @@
                        <img src="./img/contact-cover.1.jpg" alt="" class="img-fluid">
                    </div>
                    <div class="m-4 p-3">
-                       <div class="header_title form__title">Get A Free Quote Here</div>
-                       <div>
-                           <input class="form-control form-control-lg" type="text" placeholder=".form-control-lg" aria-label=".form-control-lg example">
-                           <input class="form-control" type="text" placeholder="Default input" aria-label="deafult input example">
-                           <input class="form-control form-control-sm" type="text" placeholder=".form-control-sm" aria-label=".form-control-sm example">
-                       </div>
+                       <div class="header_title form__title mb-4">Get A Free Quote Here</div>
+                       <form>
+                           <div class="my-2">
+                               <label for="FormControlInput1" class="form-label contact__form-text">Name*</label>
+                               <input type="text" class="form-control" id="FormControlInput1" placeholder="Full Name">
+                           </div>
+                           <div class="mb-2">
+                               <label for="FormControlInput2" class="form-label contact__form-text">Email*</label>
+                               <input type="email" class="form-control" id="FormControlInput2" placeholder="name@example.com">
+                           </div>
+                           <div class="mb-2">
+                               <label for="FormControlInput3" class="form-label contact__form-text">Department*</label>
+                               <select class="form-select" aria-label="Select Department" id="FormControlInput3">
+                                   <option selected>Please Select</option>
+                                   <option value="1">Ukraine</option>
+                                   <option value="2">Poland</option>
+                                   <option value="3">Germany</option>
+                               </select>
+                           </div>
+                           <div class="mb-2">
+                               <label for="FormControlInput4" class="form-label contact__form-text">Time*</label>
+                               <select class="form-select" aria-label="Select time" id="FormControlInput4">
+                                   <option selected>4:00 Available</option>
+                                   <option value="1">6:00 Available</option>
+                                   <option value="2">8:00 Available</option>
+                                   <option value="3">10:00 Available</option>
+                               </select>
+                           </div>
+                           <div class="col-auto my-5">
+                               <button type="submit" class="btn contact__form__button">
+                                   <div class="pricing__button--text">Book Appointment</div>
+                               </button>
+                           </div>
+                       </form>
                    </div>
                </div>
            </div>

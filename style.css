@@ -213,3 +213,28 @@ body {
 .form__title {
     color: #252B42;
 }
+
+.contact__form-text {
+    color: #252B42;
+    font-weight: 600;
+    font-size: 0.875rem;
+    line-height: 1.5rem;
+}
+
+.contact__form-text label,select {
+    background: #F9F9F9;
+    color: #737373;
+    font-size: 0.875rem;
+    line-height: 1.75rem;
+}
+
+.contact__form-text select {
+    background: #F9F9F9;
+}
+
+.contact__form__button{
+    width: 100%;
+    height: 52px;
+    background: #23A6F0;
+    border-radius: 5px;
+}
