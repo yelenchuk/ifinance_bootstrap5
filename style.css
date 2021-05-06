@@ -207,13 +207,13 @@ body {
 .contact_mapbg {
     width: 313px;
     height: 169px;
-    background: url("./img/pngwing 1.png") no-repeat;
+    background: url("img/pngwing.png") no-repeat;
 }
 
 .contact__card-item--media {
     min-height: 259px;
     width: 414px;
-    background: url("./img/contact-cover.1.jpg");
+    background: url("img/contact-cover-sm.jpg");
 }
 
 .form__title {
