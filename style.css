@@ -340,4 +340,27 @@ body {
         background-image: linear-gradient(transparent 60%, #FAFAFA 40%);
     }
 
+    .header_title__contact--lg {
+        font-weight: bold;
+        font-size: 1.5rem;
+        line-height: 2rem;
+
+    }
+
+    #footer {
+        background-image: linear-gradient(transparent 75%, #FAFAFA 25%);
+    }
+
+    .footer__text--color {
+        color: #737373;
+    }
+
+    .contact__img {
+        min-width: 267px;
+    }
+
+    .contact__form--wrap {
+        width: 100%;
+        background-color: white;
+    }
 }

@@ -554,46 +554,54 @@
            </div>
        </div>
        <div class="row">
-           <div class="contact__main-content col-sm-12 col-lg-9 offset-lg-2">
-               <div class="contact__card-item bg-light">
-                   <div>
-                       <img src="./img/contact-cover.1.jpg" alt="" class="img-fluid">
+           <div class="contact__main-content col-sm-12 col-lg-8 offset-lg-2">
+               <div class="contact__card-item bg-light mb-lg-5 pb-lg-5 d-lg-flex">
+                   <div class="d-block d-sm-none">
+                   <img src="./img/contact-cover.1.jpg" alt="" class="img-fluid">
+               </div>
+                   <div class="d-none d-sm-block">
+                       <img src="./img/contact-cover.2.jpg" alt="" class="contact__img">
                    </div>
-                   <div class="m-4 p-3">
-                       <div class="header_title form__title mb-4">Get A Free Quote Here</div>
-                       <form>
-                           <div class="my-2">
-                               <label for="FormControlInput1" class="form-label contact__form-text">Name*</label>
-                               <input type="text" class="form-control" id="FormControlInput1" placeholder="Full Name">
-                           </div>
-                           <div class="mb-2">
-                               <label for="FormControlInput2" class="form-label contact__form-text">Email*</label>
-                               <input type="email" class="form-control" id="FormControlInput2" placeholder="name@example.com">
-                           </div>
-                           <div class="mb-2">
-                               <label for="FormControlInput3" class="form-label contact__form-text">Department*</label>
-                               <select class="form-select" aria-label="Select Department" id="FormControlInput3">
-                                   <option selected>Please Select</option>
-                                   <option value="1">Ukraine</option>
-                                   <option value="2">Poland</option>
-                                   <option value="3">Germany</option>
-                               </select>
-                           </div>
-                           <div class="mb-2">
-                               <label for="FormControlInput4" class="form-label contact__form-text">Time*</label>
-                               <select class="form-select" aria-label="Select time" id="FormControlInput4">
-                                   <option selected>4:00 Available</option>
-                                   <option value="1">6:00 Available</option>
-                                   <option value="2">8:00 Available</option>
-                                   <option value="3">10:00 Available</option>
-                               </select>
-                           </div>
-                           <div class="col-auto my-5">
-                               <button type="submit" class="btn contact__form__button">
-                                   <div class="pricing__button--text">Book Appointment</div>
-                               </button>
-                           </div>
-                       </form>
+                   <div class="contact__form--wrap flex-column p-4">
+                       <div class="p-3">
+                           <div class="header_title form__title mb-4 d-block d-sm-none">Get A Free Quote Here</div>
+                           <div class="header_title header_title__contact--lg form__title text-center mb-4 d-none d-sm-block">Book Appointment</div>
+                       </div>
+                       <div>
+                           <form>
+                               <div class="my-2">
+                                   <label for="FormControlInput1" class="form-label contact__form-text">Name*</label>
+                                   <input type="text" class="form-control" id="FormControlInput1" placeholder="Full Name">
+                               </div>
+                               <div class="mb-2">
+                                   <label for="FormControlInput2" class="form-label contact__form-text">Email*</label>
+                                   <input type="email" class="form-control" id="FormControlInput2" placeholder="name@example.com">
+                               </div>
+                               <div class="mb-2">
+                                   <label for="FormControlInput3" class="form-label contact__form-text">Department*</label>
+                                   <select class="form-select" aria-label="Select Department" id="FormControlInput3">
+                                       <option selected>Please Select</option>
+                                       <option value="1">Ukraine</option>
+                                       <option value="2">Poland</option>
+                                       <option value="3">Germany</option>
+                                   </select>
+                               </div>
+                               <div class="mb-2">
+                                   <label for="FormControlInput4" class="form-label contact__form-text">Time*</label>
+                                   <select class="form-select" aria-label="Select time" id="FormControlInput4">
+                                       <option selected>4:00 Available</option>
+                                       <option value="1">6:00 Available</option>
+                                       <option value="2">8:00 Available</option>
+                                       <option value="3">10:00 Available</option>
+                                   </select>
+                               </div>
+                               <div class="col-auto my-4 pt-lg-4">
+                                   <button type="submit" class="btn contact__form__button">
+                                       <div class="pricing__button--text">Book Appointment</div>
+                                   </button>
+                               </div>
+                           </form>
+                       </div>
                    </div>
                </div>
            </div>
@@ -681,7 +689,7 @@
         </div>
     </div>
     <div class="container">
-        <div class="row g-2 bg-light">
+        <div class="row g-2">
             <div class="my-4 px-5 text-center footer__text--color">
                 Made With Love By Figmaland All Right Reserved
             </div>
